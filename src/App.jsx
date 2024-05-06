@@ -15,7 +15,7 @@ import "./App.css"
 import Analiz from "./pages/Admin/pegs/Analiz";
 import Seting from "./pages/Admin/pegs/Seting";
 import Praducts from "./pages/Admin/pegs/Praducts";
-import AdminHome from "./pages/Admin/pegs/AdminHome";
+import AdminLayout from "./layout/AdminLayout";
 const App = () => {
   const routes = createBrowserRouter(
     createRoutesFromElements(
@@ -25,8 +25,8 @@ const App = () => {
           <Route path="about" element={<About />} />
         </Route>
         <Route path="/login" element={<Login />} />
-        <Route  path="admin" element={<Admin />} >
-          <Route index element={<Admin />} />
+        <Route  path="admin" element={<AdminLayout />} >
+          <Route index  element={<Admin />} />
           <Route path="analiz" element={<Analiz />} />
           <Route path="seting" element={<Seting />} />
           <Route path="praducts" element={<Praducts />} />
