@@ -30,7 +30,7 @@ export default function FormDialog({
     if (editOrDelete) {
       try {
         await fetch(
-          `http://localhost:8080/api/conference/get-all/${editData.id}`,
+          `https://6634d6199bb0df2359a2e7ca.mockapi.io/conference/conference/${editData.id}`,
           {
             method: "PUT",
             headers: {
@@ -53,7 +53,7 @@ export default function FormDialog({
     } else {
       try {
         const response = await fetch(
-          "http://localhost:8080/api/conference/add",
+          "https://6634d6199bb0df2359a2e7ca.mockapi.io/conference/conference",
           {
             method: "POST",
             headers: {
@@ -75,7 +75,7 @@ export default function FormDialog({
   const handleDelete = async () => {
     try {
       await fetch(
-        `http://localhost:8080/api/conference/delete/${editData.id}`,
+        `https://6634d6199bb0df2359a2e7ca.mockapi.io/conference/conference/${editData.id}`,
         {
           method: "DELETE",
         }

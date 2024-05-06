@@ -10,12 +10,11 @@ function ConferenceCard({ conference }) {
                         alt="Conference Image"
                     />
                     <div className="pr-6 bg sm:pr-12 md:pr-20 lg:pr-30">
-                        <h6 className="mt-0 font-medium">{conference.nomi}</h6>
-                        <span className="text-sm">{conference.vaqti}</span>
-                        <p className="mt-2 mb-0">Masul tashkilot: {conference.joyi}</p>
+                        <h6 className="mt-0 font-medium">Kompania nomi: {conference.name}</h6>
+                        <span className="text-sm">Utqazish sanasi: {conference.date}</span>
+                        <p className="mt-2 mb-0">Masul tashkilot: {conference.place}</p>
                     </div>
                 </div>
-
                 <div className="ml-auto card product product--grid">
                     <div className="product-item">
                         <div className="product-item__image">

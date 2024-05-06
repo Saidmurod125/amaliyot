@@ -25,13 +25,14 @@ export const MuiTable = () => {
   const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false);
 
   const { data, loading } = useAxios(
-    "http://localhost:8080/api/conference/get-all"
+    "https://6634d6199bb0df2359a2e7ca.mockapi.io/conference/conference"
   );
  
   useEffect(() => {
     if (data) {
       setAnjumanlar(data);
     }
+  // console.log(data);
   }, [data]);
 
   const handleClickOpen = (e, data) => {
@@ -64,9 +65,14 @@ export const MuiTable = () => {
         <div className="container mx-auto ">
           <Box
             display="flex"
-            justifyContent="flex-end"
+            justifyContent="space-between"
             alignItems="center"
           >
+           
+            <input type="email" name="name" id="7898"
+            placeholder="Search"
+            className="block px-2 text-gray-900 border-2 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:text-sm sm:leading-6"
+            />
             
             <button
             className="flex  h-[50px] justify-center rounded-md bg-indigo-900 px-4 py-1.2 pt-3  text-lg font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 m-4"

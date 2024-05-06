@@ -20,18 +20,18 @@ function Navbar() {
   return (
 
    <div className='relative z-10 w-full bg-white shadow-sm md:flex'>
-    <nav className='fixed top-0 left-0 right-0 p-4 mx-auto bg-white dark:text-white md:px-14 max-w-screen-2xl dark:bg-gray-800'>
-    <div className='container flex items-center justify-between mx-auto text-lg font-medium '>
+    <nav className='fixed top-0 left-0 right-0 p-4 mx-auto bg-white dark:text-white max-w-screen-2xl dark:bg-gray-800'>
+    <div className='flex items-center justify-between mx-auto text-lg font-medium '>
 
     <div className='flex items-center gap-12 space-x-14'>
         <NavLink
           to="/"
-          className="flex items-center space-x-4 text-2xl font-semibold text-primary"
+          className="flex items-center w-48 space-x-4 text-2xl font-semibold lg:w-40 sm:w-32 text-primary"
         >
-          <img className="inline-block w-22" src='https://anjumanlar.uz/logo.svg' alt="" />
+          <img className="inline-block" src='https://anjumanlar.uz/logo.svg' alt="" />
           
         </NavLink>
-        <ul className='hidden space-x-12 md:flex sm:flex'>
+        <ul className='hidden space-x-12 lg:space-x-8 sm:space-x-4 md:flex '>
           {navItems.map(({ link, path }) => (
             <li key={link}>
               <NavLink to={path} className="block hover:text-gray-300">
@@ -41,7 +41,7 @@ function Navbar() {
           ))}
         </ul>
       </div>
-      <div className='items-center hidden space-x-12 md:flex'>
+      <div className='items-center hidden space-x-12 lg:scroll-px-8 sm:space-x-4 md:flex'>
 
 
       <DarkMode/>

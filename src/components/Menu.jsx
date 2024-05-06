@@ -50,9 +50,9 @@ function Menu() {
 
   return (
 
-    <div className="max-w-[1570px] h-[780px] w-full m-auto py-10 px-4 relative group">
+    <div className="container relative w-full py-10 pt-24 mx-auto ">
       <h1 className="mb-6 text-xl font-medium text-center dark:text-white">
-        SAYT TEST REJIMIDA ISHLAMOQDA{" "}
+        SAYT TEST REJIMIDA ISHLAMOQDA
       </h1>
 
       <div
