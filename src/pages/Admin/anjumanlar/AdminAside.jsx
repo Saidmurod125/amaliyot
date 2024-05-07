@@ -3,7 +3,7 @@ import { MdOutlineShoppingCart, MdAnalytics } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 const AdminAside = () => {
   return (
-    <div className="w-1/5 bg-white ">
+    <div className="w-1/5 bg-white dark:bg-gray-800 dark:text-white ">
       <ul className="ml-4 space-y-4 ">
         <NavLink to={""} className="flex items-center gap-2">
           <IoIosHome className="text-2xl " /> Home

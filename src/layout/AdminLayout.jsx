@@ -5,10 +5,13 @@ import AdminAside from "../pages/Admin/anjumanlar/AdminAside";
 
 const AdminLayout = () => {
   return (
-    <div className="bg-gray-100 bg-sc bg dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
       <AdminHeader />
+      <div className="flex ">
       <AdminAside />
       <Outlet />
+
+      </div>
     </div>
   );
 };

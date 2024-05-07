@@ -19,12 +19,12 @@ import AdminLayout from "./layout/AdminLayout";
 const App = () => {
   const routes = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<RootLayout />}>
-        <Route element={<Layout />}>
+      <Route element={<RootLayout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
         </Route>
-        <Route path="/login" element={<Login />} />
+        <Route path="login" element={<Login />} />
         <Route  path="admin" element={<AdminLayout />} >
           <Route index  element={<Admin />} />
           <Route path="analiz" element={<Analiz />} />

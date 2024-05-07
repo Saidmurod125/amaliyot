@@ -40,7 +40,7 @@ const Login = () => {
 
 
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-              <form className="space-y-6" action="#" method="POST">
+              <form className="space-y-6" >
                 <div>
                   <div className="">
                     <TextField
@@ -52,29 +52,23 @@ const Login = () => {
                       required
                       value={username}
                       onChange={(e) => setUsername(e.target.value)}
-                      className="block w-full px-2 text-gray-900 border-2 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:text-sm sm:leading-6"
+                      className="block w-full px-2 text-gray-900 bg-white border-2 rounded-md shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6 dark:text-white"
                     />
                   </div>
                 </div>
                 <div>
-                  <div className="flex items-center justify-between">
-                    <label
-                      htmlFor="password"
-                      className="block text-lg font-medium leading-6 text-gray-700 dark:text-white"
-                    ></label>
-                    <div className="text-sm"></div>
-                  </div>
                   <div className="mt-2">
                     <TextField
                       label="Password"
-                      id="password"
+                      id="password" 
+    
                       name="password"
                       type="password"
                       autoComplete="current-password"
                       required
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
-                      className="w-full  rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="w-full  rounded-md  py-1.5 px-2 bg-white text-gray-900 shadow-sm   placeholder:text-gray-100 sm:text-sm sm:leading-6 dark:text-white"
                     />
                   </div>
                   <div className="flex gap-4 pt-4">

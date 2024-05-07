@@ -60,7 +60,7 @@ function Menu() {
         className="w-full h-full duration-500 bg-center bg-cover"
       >
         <div className="pt-[20%]">
-          <p className="flex justify-center text-3xl font-bold text-center text-slate-100">
+          <p className="flex justify-center text-3xl font-bold text-center text-yellow-100 ">
             Xalqaro va respublika miqyosida oʻtkaziladigan ilmiy va ilmiy texnik
             tadbirlar <br />
             platformasiga xush kelibsiz

@@ -10,6 +10,7 @@ import {
   Paper,
   TablePagination,
   Box,
+  TextField,
 } from "@mui/material";
 import FormDialog from "./Modal";
 import useAxios from "../../../service/useAxios";
@@ -17,7 +18,7 @@ import Loader from './../../../components/Loader';
 
 export const MuiTable = () => {
   const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const [rowsPerPage, setRowsPerPage] = useState(7);
   const [open, setOpen] = useState(false);
   const [editOrDelete, setEditOrDelete] = useState(false);
   const [selectedAnjuman, setSelectedAnjuman] = useState(null);
@@ -62,16 +63,22 @@ export const MuiTable = () => {
       {loading ? (
         <Loader/>
       ) : (
-        <div className="container mx-auto ">
+        <div className="container h-full mx-auto dark:bg-gray-900 dark:text-white ">
           <Box
             display="flex"
             justifyContent="space-between"
             alignItems="center"
           >
            
-            <input type="email" name="name" id="7898"
-            placeholder="Search"
-            className="block px-2 text-gray-900 border-2 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:text-sm sm:leading-6"
+            <TextField
+            label="Email"
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      
+            
+            
+            className="block px-2 text-gray-900 bg-white border-2 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:text-sm sm:leading-6"
             />
             
             <button

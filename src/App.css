@@ -19,3 +19,6 @@ nav {
     color: #fff;
     background-color: rgb(0, 34, 255); /* Oq rang */
 }
+.MuiTablePagination-displayedRows{
+    color: rgb(0, 55, 255);
+}
