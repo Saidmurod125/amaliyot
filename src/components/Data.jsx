@@ -18,10 +18,8 @@ const { data, loading } = useAxios(
  useEffect(() => {
     if (data) {
       setAnjumanlar(data);
-      console.log(data);
     }
   }, [data]);
-  console.log(data);
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 5;
 

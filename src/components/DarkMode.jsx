@@ -10,6 +10,8 @@ const DarkMode = () => {
   };
 
   return (
+    <div className="text-base">
+
     <button
 
       className={`right-4 gap-2 flex items-center justify-center bg-white dark:bg-gray-800 text-gray-800 dark:text-white  rounded-full border-none  focus:outline-none`}
@@ -18,6 +20,7 @@ const DarkMode = () => {
       {darkMode ? <FaSun size={16} /> : <FaMoon size={14} />}
       <span>{darkMode ? "Yorqin rejim" : "Tungi rejim"}</span>
     </button>
+    </div>
   );
 };
 
