@@ -33,7 +33,6 @@ export const MuiTable = () => {
     if (data) {
       setAnjumanlar(data);
     }
-  // console.log(data);
   }, [data]);
 
   const handleClickOpen = (e, data) => {
