@@ -109,7 +109,7 @@ export default function FormDialog({
               label="Name"
               fullWidth
               variant="standard"
-              defaultValue={editData ? editData.name : ""}
+              defaultValue={editData ? editData?.name : ""}
             />
             <TextField
               required
@@ -117,7 +117,7 @@ export default function FormDialog({
               name="date"
               type="date"
               variant="standard"
-              defaultValue={editData ? editData.date : "2024-05-03"}
+              defaultValue={editData ? editData?.date : "2024-05-03"}
               InputLabelProps={{ shrink: true }}
             />
             <TextField
@@ -126,13 +126,22 @@ export default function FormDialog({
               name="place"
               label="Location"
               variant="standard"
-              defaultValue={editData ? editData.place : ""}
+              defaultValue={editData ? editData?.place : ""}
             />
+            <TextField
+              required
+              fullWidth
+              type="file"
+              name="image"
+              label="Image"
+              variant="standard"
+              inputProps={{ accept: "image/*" }} 
+              defaultValue={editData ? editData?.image : ""}
+            />
+
             <DialogActions>
               <Button onClick={handleClose}>Cancel</Button>
-              <Button type="submit">
-                {editOrDelete ? "Save" : "Submit"}
-              </Button>
+              <Button type="submit">{editOrDelete ? "Save" : "Submit"}</Button>
             </DialogActions>
           </form>
         </DialogContent>
@@ -144,7 +153,7 @@ export default function FormDialog({
         </DialogContent>
         <DialogActions>
           <Button onClick={handleDeleteCancel}>Cancel</Button>
-          <Button onClick={handleDelete} color="error">
+          <Button onClick={() => handleDelete(editData)} color="error">
             Delete
           </Button>
         </DialogActions>
