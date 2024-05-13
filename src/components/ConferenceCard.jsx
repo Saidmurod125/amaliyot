@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 const ConferenceCard = ({ conference }) => {
   return (
     <Link to={`details/${conference.id}`}>
-      <div className="container px-2 mx-auto mt-8 mb-10 col-tspan-12 sm:col-span-12">
+
+      <div title="View more" className="container px-2 mx-auto mt-8 mb-10 col-tspan-12 sm:col-span-12">
         <div className="flex items-center py-10 bg-white dark:bg-gray-800 dark:text-white box-shadowed ps-6 sm:ps-8 md:ps-10 dark:shadow-2xl lg:ps-12 xl:ps-20 rounded-xl">
           <div className="flex w-95">
             <img
