@@ -6,10 +6,10 @@ const ConferenceDetails = () => {
     `https://6634d6199bb0df2359a2e7ca.mockapi.io/conference/conference/${id}`
   );
   return (
-    <div className="card mt-16">
+    <div className="mt-16 card">
       <div className="card-body">
         <div className="row">
-          <div className="col-lg-3 mb-3" style={{ maxWidth: "20rem" }}>
+          <div className="mb-3 col-lg-3" style={{ maxWidth: "20rem" }}>
             <img
               src="images/Conference2.jpg"
               className="img-thumbnail"
