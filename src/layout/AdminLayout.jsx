@@ -13,11 +13,13 @@ const AdminLayout = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
-          <AdminHeader />
+        <div className="h-screen bg-gray-100 dark:bg-gray-900">
           <div className="flex ">
             <AdminAside />
-            <Outlet />
+            <div className="w-[80%]">
+              <AdminHeader />
+              <Outlet />
+            </div>
           </div>
         </div>
       )}

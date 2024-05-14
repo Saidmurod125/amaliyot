@@ -21,6 +21,7 @@ export const MuiTable = () => {
   const { data, loading } = useAxios(
     "https://6634d6199bb0df2359a2e7ca.mockapi.io/conference/conference"
   );
+  
   useEffect(() => {
     if (data) {
       setAnjumanlar(data);
@@ -75,6 +76,7 @@ export const MuiTable = () => {
 
   return (
     <>
+  
       <div className="container h-full mx-auto dark:bg-gray-900 dark:text-white ">
         <Box
           display="flex"
@@ -131,10 +133,10 @@ export const MuiTable = () => {
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell align="center">Id</TableCell>
-                <TableCell align="center">Name</TableCell>
-                <TableCell align="center">Time</TableCell>
-                <TableCell align="center">Place</TableCell>
+                <TableCell align="center"><p className="font-bold">Id</p></TableCell>
+                <TableCell align="center"><p className="font-bold">Name</p></TableCell>
+                <TableCell align="center"><p className="font-bold">Time</p></TableCell>
+                <TableCell align="center"><p className="font-bold">Place</p></TableCell>
               </TableRow>
             </TableHead>
             <TableBody className="cursor-pointer">
